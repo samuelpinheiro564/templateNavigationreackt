@@ -6,12 +6,13 @@ import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
 
+
 const Tab = createBottomTabNavigator();
 
 const TabRoutes = () => {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
-      <Tab.Screen
+    { /* <Tab.Screen
         name="Profile"
         component={Profile}
         initialParams={{ data: user }}
@@ -27,8 +28,9 @@ const TabRoutes = () => {
           tabBarActiveTintColor: "#131313",
           tabBarInactiveTintColor: "#D6D6D6",
         }}
-      />
-      <Tab.Screen
+      />*/}
+      
+    {/*  <Tab.Screen
         name="Home"
         component={Home}
         options={{
@@ -43,9 +45,9 @@ const TabRoutes = () => {
           tabBarActiveTintColor: "#131313",
           tabBarInactiveTintColor: "#D6D6D6",
         }}
-      />
+      />*/}
 
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Category"
         component={Category}
         options={{
@@ -59,8 +61,8 @@ const TabRoutes = () => {
           tabBarLabel: "Categorias",
           tabBarActiveTintColor: "#131313",
           tabBarInactiveTintColor: "#D6D6D6",
-        }}
-      />
+        }}'
+      /> */}
     </Tab.Navigator>
   );
 };
